@@ -7,6 +7,7 @@ const connectDB = require('./config');
 const authRoutes = require('./routes/auth');
 const messageRoutes = require('./routes/messages');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 const app = express();
 const server = http.createServer(app);
@@ -69,7 +70,7 @@ app.get('/health', (req, res) => {
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('Server is running ��');
+  res.send('Server is running');
 });
 
 app.use('/api/messages', messageRoutes);
@@ -83,7 +84,7 @@ io.on('connection', (socket) => {
 
   socket.on('authenticate', (token) => {
     try {
-      const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your-secret-key');
+      const decoded = jwt.verify(token, process.env.JWT_SECRET || 'hacker-chat-secret-key-2024');
       const username = decoded.username;
       connectedUsers.set(socket.id, username);
       console.log('User authenticated:', username);
@@ -116,6 +117,11 @@ io.on('connection', (socket) => {
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ message: 'Something went wrong!' });
+});
+
+// 404 handler
+app.use((req, res) => {
+  res.status(404).json({ message: 'Route not found' });
 });
 
 const PORT = process.env.PORT || 5001;

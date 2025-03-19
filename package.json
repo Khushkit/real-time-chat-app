@@ -1,12 +1,14 @@
 {
   "name": "real-time-chat-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Real-time chat application with hacker theme",
   "main": "index.js",
   "scripts": {
-    "start:backend": "node backend/server.js",
+    "start": "node backend/server.js",
     "start:frontend": "cd chat-frontend && npm start",
-    "install:all": "npm install && cd chat-frontend && npm install"
+    "start:backend": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../chat-frontend && npm install",
+    "build": "cd chat-frontend && npm run build"
   },
   "keywords": [],
   "author": "",

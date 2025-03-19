@@ -1,32 +1,32 @@
-# Real-Time Chat Application
+# Real-time Chat Application
 
-A modern, real-time chat application built with React, Node.js, Socket.IO, and MongoDB. Features a futuristic hacker-themed UI with real-time messaging capabilities.
+A modern real-time chat application built with React, Node.js, Socket.IO, and MongoDB.
 
 ## Features
 
-- Real-time messaging using Socket.IO
-- User authentication with JWT
-- Modern, responsive UI with hacker theme
-- Animated background effects
-- MongoDB for message persistence
-- WebSocket for live updates
+- Real-time messaging
+- User authentication
+- Modern UI with animations
+- Responsive design
+- WebSocket communication
 
 ## Tech Stack
 
 - Frontend: React.js
 - Backend: Node.js, Express
-- Real-time: Socket.IO
+- Real-time Communication: Socket.IO
 - Database: MongoDB
 - Authentication: JWT
-- Styling: CSS3 with animations
 
-## Prerequisites
+## Getting Started
+
+### Prerequisites
 
 - Node.js (v14 or higher)
 - MongoDB
 - npm or yarn
 
-## Installation
+### Installation
 
 1. Clone the repository:
 ```bash
@@ -50,9 +50,9 @@ npm install
 
 Backend (.env):
 ```
-PORT=5001
-MONGODB_URI=mongodb://localhost:27017/chat-app
 JWT_SECRET=your-secret-key
+MONGODB_URI=your-mongodb-uri
+PORT=5001
 FRONTEND_URL=http://localhost:3000
 ```
 
@@ -62,7 +62,7 @@ REACT_APP_API_URL=http://localhost:5001
 REACT_APP_WS_URL=ws://localhost:5001
 ```
 
-## Running the Application
+### Running the Application
 
 1. Start the backend server:
 ```bash
@@ -76,17 +76,29 @@ cd chat-frontend
 npm start
 ```
 
-3. Open http://localhost:3000 in your browser
+The application will be available at http://localhost:3000
 
 ## Test Users
 
-- Username: test
-- Password: password
+You can use these test accounts to try the application:
+- Username: test, Password: password
+- Username: john, Password: john123
+- Username: alice, Password: alice123
 
 ## Deployment
 
-This application is configured for deployment on Vercel. Simply connect your GitHub repository to Vercel and it will automatically deploy your application.
+The application is deployed on Vercel:
+- Frontend: https://your-frontend-url.vercel.app
+- Backend: https://your-backend-url.vercel.app
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-MIT 
+This project is licensed under the MIT License - see the LICENSE file for details. 

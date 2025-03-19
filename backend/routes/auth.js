@@ -1,10 +1,10 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 const router = express.Router();
 
-// Secret key should be in environment variables in production
-const SECRET_KEY = 'chat-app-secret-123';
+const SECRET_KEY = process.env.JWT_SECRET || 'hacker-chat-secret-key-2024';
 
 // In-memory user store (in production, this should be in a database)
 const users = [
