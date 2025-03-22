@@ -30,7 +30,7 @@ A modern real-time chat application built with React, Node.js, Socket.IO, and Mo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/real-time-chat-app.git
+git clone https://github.com/khushkit/real-time-chat-app.git
 cd real-time-chat-app
 ```
 
@@ -85,20 +85,3 @@ You can use these test accounts to try the application:
 - Username: john, Password: john123
 - Username: alice, Password: alice123
 
-## Deployment
-
-The application is deployed on Vercel:
-- Frontend: https://your-frontend-url.vercel.app
-- Backend: https://your-backend-url.vercel.app
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
