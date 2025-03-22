@@ -85,3 +85,4 @@ You can use these test accounts to try the application:
 - Username: john, Password: john123
 - Username: alice, Password: alice123
 
+![jobit](https://github.com/user-attachments/assets/7ff76298-446a-4c0c-9d5d-beaa4420ff57)
